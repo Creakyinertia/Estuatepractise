@@ -5,7 +5,7 @@ function Hookcounter() {
   return (
     <>
     <div>{count}</div>
-    <button onClick={()=>setCount(count+1)}>increment</button>
+    <button onClick={()=>setCount(count+1)}>increement</button>
     <button onClick={()=>setCount(0)}>reset</button>
     <button onClick={()=>setCount(count-2)}>decrement</button>
     </>

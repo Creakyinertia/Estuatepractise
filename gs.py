@@ -3,14 +3,13 @@ import os
 import random as rd
 bitmap = {
 '6': [ 
-    [1 , 0 , 1, 0],
+    [0 , 1 , 0, 1],
     [0 , 1 , 1, 0],
-    [0 , 1 , 1, 1],
     [1 , 1 , 0, 0],
-    [0 , 1 , 1, 1],
-    [1 , 0 , 1, 1],
-    [1 , 1 , 1, 0],
-    
+    [1 , 0 , 1, 0],
+    [1 , 1 , 1, 1],
+    [1 , 1 , 1, 1],
+    [0 , 1 , 1, 0],
 ],
 "A": [ 
     [1 , 1 , 1, 1],
@@ -284,7 +283,7 @@ def main(dirs, dates):
     PushAll(dirs)
 
 def generate_dates():
-    start = date(2023, 7, 27)
+    start = date(2023, 6, 27)
     dates = []
     current_date = start
     sentence = "6"

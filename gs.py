@@ -2,6 +2,16 @@ from datetime import timedelta, date
 import os
 import random as rd
 bitmap = {
+'6': [ 
+    [0 , 0 , 0, 0],
+    [0 , 1 , 1, 0],
+    [0 , 1 , 1, 0],
+    [0 , 1 , 1, 0],
+    [0 , 1 , 1, 0],
+    [0 , 1 , 1, 0],
+    [0 , 0 , 0, 0],
+    
+],
 "A": [ 
     [1 , 1 , 1, 1],
     [1 , 0 , 0, 1],
@@ -277,7 +287,7 @@ def generate_dates():
     start = date(2023, 8, 27)
     dates = []
     current_date = start
-    sentence = "H"
+    sentence = "6"
     for character in sentence:
         character = bitmap[character]
         for i in range(7):
